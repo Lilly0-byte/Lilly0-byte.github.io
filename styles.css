@@ -399,15 +399,6 @@ body {
   touch-action: none;
 }
 
-.game-hint {
-  margin: 0.85rem 0 0;
-  font-size: 0.6rem;
-  line-height: 1.5;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
 @media (min-width: 640px) {
   .links {
     gap: 0.5rem;
