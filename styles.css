@@ -357,6 +357,57 @@ body {
   margin-top: 0.5rem;
 }
 
+.stage--demo {
+  justify-content: flex-start;
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.game-panel {
+  max-width: min(100%, 36rem);
+  width: 100%;
+  margin: 0 auto 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%
+  );
+}
+
+.game-label {
+  margin: 0 0 0.75rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.game-canvas-wrap {
+  width: 100%;
+  line-height: 0;
+}
+
+#bounce-canvas {
+  display: block;
+  width: 100%;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.game-hint {
+  margin: 0.85rem 0 0;
+  font-size: 0.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 @media (min-width: 640px) {
   .links {
     gap: 0.5rem;
